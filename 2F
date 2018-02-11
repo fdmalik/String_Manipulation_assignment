@@ -1,0 +1,47 @@
+# String_Manipulation_assignment
+I`ve worked really hard on these codes and would everyone to try running them once! you`ll definitely enjoy :)
+
+        Dim StrA As String = ""
+        Dim StrB As String = ""
+        Dim SAF As String = ""
+        Dim SAB As String = ""
+        Dim SBF As String = ""
+        Dim SBB As String = ""
+        Dim OStrALen As Integer = 0
+        Dim OStrBLen As Integer = 0
+        Dim FinalFantasy As String = ""
+
+
+        Console.WriteLine(" And now, for my last trick, i`d like you to eter a string : ")
+        StrA = Console.ReadLine
+        Console.WriteLine(" kindly enter another string (it`d be better if that string is something different) : ")
+        StrB = Console.ReadLine
+
+
+        If Len(StrA) Mod 2 <> 0 Then
+            OStrALen = Len(StrA) - 1
+            SAB = Right(StrA, Len(OStrALen) / 2)
+            SAF = Left(StrA, (Len(OStrALen) / 2) + 1)
+        Else
+            SAB = Right(StrB, Len(StrA) / 2)
+            SAF = Left(StrA, Len(StrA) / 2)
+        End If
+
+
+
+        If Len(StrB) Mod 2 <> 0 Then
+            OStrBLen = Len(StrB) - 1
+            SBB = Right(StrB, Len(StrB) / 2)
+            SBF = Left(StrB, (Len(StrB) / 2) + 1)
+        Else
+            SBB = Right(StrB, Len(StrB) / 2)
+            SBF = Left(StrB, Len(StrB) / 2)
+        End If
+
+
+        FinalFantasy = SAF & " + " & SBF & " + " & SAB & " + " & SBB
+        Console.WriteLine()
+        Console.WriteLine("Here you go:::> " & FinalFantasy)
+        Console.WriteLine()
+        Console.WriteLine(" It Was Great Working For You! I Hope life gives me many more chances to  bring smiles on peoples faces and make this world a better and tolerable place to live")
+        Console.ReadKey()

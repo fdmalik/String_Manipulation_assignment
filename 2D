@@ -1,0 +1,24 @@
+# String_Manipulation_assignment
+I`ve worked really hard on these codes and would everyone to try running them once! you`ll definitely enjoy :)
+
+        Dim AlphaA As String = ""
+        Dim AlphaB As String = ""
+        Dim BetaA As String = ""
+        Dim BetaB As String = ""
+        Dim Fusion As String = ""
+
+
+        Console.WriteLine("Enter the First Magical String : ")
+        AlphaA = Console.ReadLine()
+
+        Console.WriteLine("Enter the Second Magical String : ")
+        BetaA = Console.ReadLine()
+
+        AlphaB = Left(AlphaA, 2)
+        BetaB = Left(BetaA, 2)
+
+        Fusion = BetaB & Mid(AlphaA, 3, Len(AlphaA)) & ", " & AlphaB & Mid(BetaA, 3, Len(BetaA))
+
+        Console.WriteLine(" On a Beautiful Sunny Day, The Wonderful Majical Strings Fused in an enchantful way and what we got as a result was this : " & Fusion)
+
+        Console.ReadKey()

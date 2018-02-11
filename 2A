@@ -1,0 +1,16 @@
+# String_Manipulation_assignment
+I`ve worked really hard on these codes and would everyone to try running them once! you`ll definitely enjoy :)
+
+ Dim count As Integer = 0
+        Dim prompt As String = "many"
+        Dim Output As String = ""
+
+        Console.Write("Please Enter the quantity of donuts : ")
+        count = Console.ReadLine()
+
+        If count <= 9 Then
+            Console.WriteLine("Number od Donuts : " & count)
+        ElseIf count >= 10 Then
+            Console.WriteLine("Many")
+        End If
+        Console.ReadKey()

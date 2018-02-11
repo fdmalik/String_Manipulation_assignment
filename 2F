@@ -20,22 +20,22 @@ I`ve worked really hard on these codes and would everyone to try running them on
 
         If Len(StrA) Mod 2 <> 0 Then
             OStrALen = Len(StrA) - 1
-            SAB = Right(StrA, Len(OStrALen) / 2)
+            SAB = Right(StrA, (Len(OStrALen) / 2))
             SAF = Left(StrA, (Len(OStrALen) / 2) + 1)
         Else
-            SAB = Right(StrB, Len(StrA) / 2)
-            SAF = Left(StrA, Len(StrA) / 2)
+            SAB = Right(StrA, (Len(StrA) / 2))
+            SAF = Left(StrA, (Len(StrA) / 2))
         End If
 
 
 
         If Len(StrB) Mod 2 <> 0 Then
             OStrBLen = Len(StrB) - 1
-            SBB = Right(StrB, Len(StrB) / 2)
+            SBB = Right(StrB, (Len(StrB) / 2))
             SBF = Left(StrB, (Len(StrB) / 2) + 1)
         Else
-            SBB = Right(StrB, Len(StrB) / 2)
-            SBF = Left(StrB, Len(StrB) / 2)
+            SBB = Right(StrB, (Len(StrB) / 2))
+            SBF = Left(StrB, (Len(StrB) / 2))
         End If
 
 

@@ -13,9 +13,8 @@ I`ve worked really hard on these codes and would everyone to try running them on
 
         If Len(Content) >= 2 Then
             Console.WriteLine("Here`s your magic : " & Farleft & FarRight)
-        Else : Console.WriteLine(" Sorry! you ruined the trick :( ")
-
-
+        ElseIf Len(Content) < 2 Then
+            Console.WriteLine(" Sorry! you ruined the trick :( you can have yous string back::::> " & Content)
 
         End If
         Console.ReadKey()

@@ -1,0 +1,25 @@
+# String_Manipulation_assignment
+I`ve worked really hard on these codes and would everyone to try running them once! you`ll definitely enjoy :)
+
+        Dim Primary As String = ""
+        Dim Secondary As String = ""
+        Dim length As Integer = 0
+        Dim LetterOne As Char = ""
+
+        Console.WriteLine("Please type in the sting on which you`d like to see my majical spells working ;) ")
+        Primary = Console.ReadLine()
+
+        LetterOne = Left(Primary, 1)
+        Secondary = LetterOne
+
+        For length = 1 To Len(Primary) - 1
+            If Mid(Primary, length + 1, 1) = LetterOne Then
+                Secondary = Secondary & "*"
+            Else
+                Secondary = Secondary & Mid(Primary, length + 1, 1)
+            End If
+
+        Next
+
+        Console.Write("Aabracadabra : " & Secondary)
+        Console.ReadKey()

@@ -1,0 +1,39 @@
+# String_Manipulation_assignment
+I`ve worked really hard on these codes and would everyone to try running them once! you`ll definitely enjoy :)
+
+        Dim AlphaA As String = ""
+        Dim BetaLeft As String = ""
+        Dim BetaRight As String = ""
+        Dim AlphaB As String = ""
+
+        Dim NotsLocation As Integer = 0
+        Dim BadsLocation As Integer = 0
+
+        Dim NF As Boolean = False
+        Dim BF As Boolean = False
+
+
+        Console.WriteLine("Let the hunger games begin(kindly enter the string) : ")
+        AlphaA = Console.ReadLine()
+
+        
+
+        If InStr(AlphaA, "not") <> 0 Then
+            NotsLocation = InStr(AlphaA, "not")
+            NF = True
+        End If
+
+        If InStr(AlphaA, "bad") <> 0 Then
+            BadsLocation = InStr(AlphaA, "bad")
+            BF = True
+        End If
+
+        If NF = False Or BF = False Then
+            Console.WriteLine(" Looks like you dont want the majic to take place? ")
+        Else
+            BetaLeft = Mid(AlphaA, 1, NotsLocation - 1)
+            BetaRight = Mid(AlphaA, BadsLocation + 3, Len(AlphaA))
+            AlphaB = BetaLeft & "good" & BetaRight
+
+            Console.WriteLine("And here`s the long awaited result that i worked hours on being processed and show to you within a matter of milliseconds: " & AlphaB)
+        End If

@@ -1,0 +1,21 @@
+# String_Manipulation_assignment
+I`ve worked really hard on these codes and would everyone to try running them once! you`ll definitely enjoy :)
+
+        Dim Content As String = 0
+        Dim FarRight As String = 0
+        Dim Farleft As String = 0
+
+        Console.WriteLine("PLEASE TYPE WATEVER YOU`D LIKE TO AND SEE SOME MAGIC : ")
+        Content = Console.ReadLine()
+
+        FarRight = Right(Content, 2)
+        Farleft = Left(Content, 2)
+
+        If Len(Content) >= 2 Then
+            Console.WriteLine("Here`s your magic : " & Farleft & FarRight)
+        Else : Console.WriteLine(" Sorry! you ruined the trick :( ")
+
+
+
+        End If
+        Console.ReadKey()
